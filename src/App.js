@@ -13,10 +13,7 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
-        <Child
-          addNumber={this.addNumber.bind(this, "new")}
-          number={this.state.number}
-        />
+        <Child addNumber={this.addNumber} number={this.state.number} />
       </div>
     );
   }
