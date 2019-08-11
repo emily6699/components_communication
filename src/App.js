@@ -10,10 +10,19 @@ class App extends Component {
   addNumber = () => {
     this.setState({ number: this.state.number + 1 });
   };
+
+  subNumber = () => {
+    this.setState({ number: this.state.number - 1 });
+  };
+
   render() {
     return (
-      <div className='App'>
-        <Child addNumber={this.addNumber} number={this.state.number} />
+      <div>
+        <Child
+          addNumber={this.addNumber}
+          subNumber={this.subNumber}
+          number={this.state.number}
+        />
       </div>
     );
   }

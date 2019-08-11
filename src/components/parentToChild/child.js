@@ -5,7 +5,11 @@ const child = props => {
     <div class='btn-div'>
       CART:
       <button class='btn' onClick={props.addNumber}>
-        {props.number}
+        +
+      </button>
+      {props.number}
+      <button class='btn' onClick={props.subNumber}>
+        -
       </button>
     </div>
   );
